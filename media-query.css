@@ -1,0 +1,135 @@
+/* Media query */
+@media screen and (min-width:300px) and (max-width:500px){
+    /* ---------------first-content Menupage--------------- */
+    .heading {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar .submenu {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        padding: 40px;
+        justify-content: start;
+        flex-direction: column;
+        top: -100%;
+        left: 100%;
+        transition: all 0.5s;
+        z-index: 1;
+   }
+   .heading .right h1{
+    font-size: 50px;
+   }
+   .heading .right {
+    padding-right: 132px;
+   }
+    .navbar .size{
+        font-size: 30px;
+        display: block;
+       }
+       #click:checked ~ .submenu {
+        top: 60px;
+        left: 0;
+    }
+    .first-page .bars {
+        top: -25px;
+        width: 180px;
+        height: 100px
+    }
+
+    /* <!-------------- Second content - My Skill Expertise page --------------------> */
+    .second_page .skill_subject .icon_box {
+            width: 220px;
+            height: 220px;
+            top: 0px;
+            margin-top: 20px;
+    }
+    .department {
+        padding-top: 30px;
+    }
+    .department h1 {
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .department p{
+        margin-top: 15px;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-bottom: 0px;
+    }
+    .skill p{
+        font-size: 20px;
+    }
+    .department .skill button {
+        padding: 6px 40px 6px 20px;
+        margin-left: 20px;
+    }
+
+    /* <!-------------- Third content - Number of counting page --------------------> */
+    .third_page {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .third_page .left_side .count_4-boxes {
+        grid-template-columns: auto;
+    }
+    .third_page .left_side .para button {
+        width: 70%;
+        font-size: 13px;
+    }
+    .third_page .left_side .para i {
+        right: 37px;
+        top: -1px;
+    }
+    .third_page .left_side .para h3 {
+        width: 300px;
+    }
+    .third_page .right_side {
+        width: 85%;
+        margin-top: 0px;
+    }
+
+    /* <-------------- Fourth content - Experience page --------------------> */
+    .fourth_page {
+        padding-top: 30px;
+        width: 100%;
+    }
+    .fourth_page button{
+         width: 150px;
+         margin-left: 0;
+    } 
+    .fourth_page .heading_para p {
+        font-weight: normal;
+        font-size: 16px;
+    }
+    .fourth_page .designation_para {
+        gap: 10px;
+        font-size: 15px;
+        border-top: 3px solid darkslateblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        flex-direction: column;
+    }
+    .fourth_page .heading_para h1{
+        font-size: 25px;
+    }
+
+    /* <-------------- Fifth content - Pricing details page --------------------> */
+    .fifth_page .about_details {
+        gap: 30px;
+        flex-direction: column-reverse;
+        align-items: baseline;
+    }
+    .fifth_page .pricing p {
+        font-weight:normal;
+    }
+    .fifth_page button {
+        width: 150px;
+        margin-left: 0;
+    }
+    /* <!-------------- Seventh content page - Software Development page --------------------> */
+    .seventh_page h1 {
+        font-size: 2.5rem;
+    }
+}
